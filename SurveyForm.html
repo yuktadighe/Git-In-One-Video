@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surveyform</title>
+    <link rel="stylesheet" href="file1.css" />
+  
+</head>
+<body>
+    
+    
+    <div class="content">
+        <header >
+       <h1 id="title">SURVEY FORM</h1>
+       <p id="description">Fill this form and know more about yourself!!!</p>
+         </header>
+         <form id="survey-form">
+           
+           
+           <div class="form-group">
+             <label id="name-label" for="name">NAME</label>
+             <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name" required>
+           </div>
+           
+       <div class="form-group">
+             <label id="email-label" for="name">MAIL-ID</label>
+             <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Mail id" required>
+           </div>
+           
+           <div class="form-group">
+            <label id="number-label" for="name">AGE</label>
+             <input type="number" name="number" id="number" class="form-control" placeholder="Enter your age "  min="5" max="100" required>
+           </div>
+         
+           
+           <div class="form-group">
+             <p> What is highest level of education you have completed??</p>
+             <select id="drop-down" name="designation" class="form-control" required>
+               <option disabled selected values >select your level of education </option>
+               <option value="lower studies">Lower Secondary</option>
+               <option value="higher studies">higher Secondary</option>
+                  <option value="diploma">Diploma</option>
+                <option value="degree">Degree</option>
+               <option value="other">Other</option>
+             </select>
+           </div>
+           
+           <div class="form-group">
+             <p>What is your Occupation??</p>
+              <label>
+             <input name="user-recommend" value="student" type="radio" class="input-radio" checked>Full-Time Student </label>
+             <lable>
+                 <input name="user-recommend" value="Unemployed" type="radio" class="input-radio" checked>Unemployed </label>
+               <label>
+                 <input name="user-recommend" value="Employed" type="radio" class="input-radio" checked>Employed </label>
+               
+          <label>   <input name="user-recommend" value="housewife/husband" type="radio" class="input-radio" checked>House Wife/Husband</label>
+               
+            <label><input name="user-recommend" value="Retired" type="radio" class="input-radio" checked>Retired</label>
+            <label><input name="user-recommend" value="Other" type="radio" class="input-radio" checked>Other</label>
+            </div>   
+           
+           <div class="form-group">
+             <P>What do you like to do in your free time?</p>
+             <label>
+               <input name="hobbie" value="watch movies/series" type="checkbox" class="input-checkbox" >Watch Movies/Series </label>
+          
+           <label>
+               <input name="hobbie" value="Dancing/Singing" type="checkbox" class="input-checkbox" >Dancing/Singing </label>
+          
+         <label>
+               <input name="hobbie" value="Read books" type="checkbox" class="input-checkbox" >Read Books </label>
+          
+       <label>
+               <input name="hobbie" value="Board-games" type="checkbox" class="input-checkbox" >Play Board Games </label>
+           
+       <label>
+               <input name="hobbie" value="Travel" type="checkbox" class="input-checkbox" >Travel </label>
+             <label>
+               <input name="hobbie" value="Sports" type="checkbox" class="input-checkbox" > Playing Sports</label>
+            <label>
+               <input name="hobbie" value="cooking" type="checkbox" class="input-checkbox" > Cooking</label>
+               <label>
+               <input name="hobbie" value="Photography/Gardening" type="checkbox" class="input-checkbox" > Photography/Gardening</label>
+              <label>
+               <input name="hobbie" value="Languages" type="checkbox" class="input-checkbox" > Learn Different Languages</label>
+              <label>
+               <input name="hobbie" value="camping" type="checkbox" class="input-checkbox" > Go for a Trekk/Camping</label>
+           </div>
+           <div class="form-group">
+             <p>Describe yourself in three words</p>
+             <textarea 
+                       id="words" class="input-textarea" name="describe" placeholder="Enter Here"></textarea>
+           </div>
+           <div class="form-group">
+             <button type="submit" name="submit" class="input-submit">SUBMIT</button>
+           </div>
+         </form>
+           </div>
+             
+</body>
+</html>
